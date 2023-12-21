@@ -1,0 +1,92 @@
+Login Details:{{loginDate|date:'short'}}
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="my-3">CONTACT MANAGEMENT APPLICATION</h1>
+            <P style="text-align: justify;">
+                Gone are the days of exchanging napkin notes and business cards. In today’s fast-paced business world,
+                it can be hard to remember every customer’s name and their individual preferences. That’s why it’s
+                essential to store data electronically, share it with team members when needed and continuously gather
+                information to successfully interact with clients and customers.
+            </P>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+       <img style="width: 100%;" src="https://website-assets-fw.freshworks.com/attachments/cks4jrkww07r6n9g0m9u543em-11239-freshsales-illustration-01.one-half.png"
+       alt="">
+      </div>
+      <div class="col-6">
+        <img style=" width:100%" src="https://tapandtype.com/images/ems_slider.png" alt="">
+    </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-between">
+            <div>
+                <input (keyup)="search($event)" type="text" value="" placeholder="serach contact" class="form-control">
+            </div>
+            <button class="btn btn-outline-danger" routerLink="addContact">Add contact</button>
+        </div>
+    </div><br>
+    <!-- string interpolation -->
+    {{heading}}
+    <!-- {{allContacts|json}} -->
+    <div class="row">
+        <div class="col-6" style="padding-top: 20px;" *ngFor="let contacts of allContacts | filter:searchKey:'name'">
+            <div class="card">
+                <div class="row">
+                    <div class="col-6 ">
+                        <!-- image -->
+                        <img class="" width="280px" height="250px" [src]="contacts.photourl">
+                    </div>
+                    <div class="col-6">
+                        <ol class="list-group list-group-numbered m-4">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Full Name</div>
+                                    {{contacts.name}}
+                                </div>
+                                <span class="badge bg-warning rounded-pill p-2">
+                                    <a routerLink="view/{{contacts.id}}">
+                                        <i class="fa-solid fa-eye" style="color: #f7f9fc;"></i>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Phone Number</div>
+                                    {{contacts.phone}}
+                                </div>
+                                <!-- edit -->
+                                <span class="badge bg-warning rounded-pill">
+                                    <a routerLink="edit/{{contacts.id}}">
+                                        <i class="fa-sharp fa-solid fa-pen" style="color: #fafafa;"></i>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">E-Mail</div>
+                                    {{contacts.email}}
+                                </div>
+
+                                <button (click)="deleteContact(contacts.id)" class="badge bg-danger rounded-pill">
+                                    <a routerLink="">
+                                        <i class="fa-sharp fa-solid fa-trash" style="color: #fafafa;"></i>
+                                    </a>
+                                </button>
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <br><br>
+
+</div>

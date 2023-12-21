@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>View Contact Details</h1>
+    <div class="row">
+        <div class="col-6">
+            <!-- view details -->
+            <ul class="list-group list-group-flush mt-5">
+                <li class="list-group-item">Full Name : {{contact.name}}</li>
+                <li class="list-group-item">Email : {{contact.email}}</li>
+                <li class="list-group-item">Mobile : {{contact.phone}}</li>
+                <li class="list-group-item">Company : {{contact.company}}</li>
+                <li class="list-group-item">Title: {{contact.title}}</li>
+                <li class="list-group-item">Group : {{groupName}}</li>
+              </ul>
+
+              
+              <button routerLink="/" class="btn btn-outline-dark ms-3 my-5">Back to Home</button>
+
+        </div>
+        <div class="col-6">
+            <!-- image -->
+            <img style="width: 400px; height:350px" [src]="contact.photourl" alt="">
+
+        </div>
+
+    </div> <br><br>
+
+</div>

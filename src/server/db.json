@@ -1,0 +1,58 @@
+{
+  "contacts": [
+    {
+      "GroupId": "1",
+      "id": "01",
+      "name": "Alex Murf",
+      "photourl": "https://www.impreg.de/wpi/wp-content/uploads/2022/11/Management-contact-person-Karsten-Mueller-CEO-IMPREG-GmbH.jpg",
+      "email": "alexmurf32@gmail.com",
+      "phone": "787981262",
+      "company": "ARTE",
+      "title": "Businessman"
+    },
+    {
+      "GroupId": "2",
+      "id": "569",
+      "name": "Kevin Tom",
+      "photourl": "https://www.impreg.de/wpi/wp-content/uploads/2021/05/Christian-Pfaff-Sales-Manager-DACH-IMPREG.jpg",
+      "email": "kevintom@gmail.com",
+      "phone": "896523158",
+      "company": "FACT",
+      "title": "Assistant Manager"
+    },
+    {
+      "GroupId": "3",
+      "id": "231",
+      "name": "Susan karry",
+      "photourl": "https://www.impreg.de/wpi/wp-content/uploads/2021/05/Katrin-Letztgus-Danhach-contact-person-head-of-sales.jpg",
+      "email": "susankarray78@gmail.com",
+      "phone": "48916183",
+      "company": "REWQ",
+      "title": "Director"
+    },
+    {
+      "GroupId": "1",
+      "id": "541",
+      "name": "Robert San",
+      "photourl": "https://www.impreg.de/wpi/wp-content/uploads/2022/12/Carsten-Rossen-Moldt-Finance-Manager-EMEA-at-IMPREG-in-Ammerbuch.jpg",
+      "email": "robertsan@gmail.com",
+      "phone": "45689721",
+      "company": "TVN",
+      "title": "Web Developer"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Company"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friends"
+    }
+  ]
+}
